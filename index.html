@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Roberto</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#bienvenido" onclick="seleccionar()">BIENVENIDO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#lenguajeprogra" onclick="seleccionar()">LENGUAJES DE PROGRAMACION</a></li>
+                    <li><a href="#formaprofe" onclick="seleccionar()"> FORMACION PROFESIONAL</a></li>
+                    <li><a href="#idiomas" onclick="seleccionar()">IDIOMAS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Bienvenido -->
+    <section id="bienvenido" class="bienvenido">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/profile.jpg" alt="">
+            </div>
+            <h1>ROBERTO FLORES</h1>
+            <h2>Estudiante de Diseño y Desarrollo de Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100023632988664"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/Roberto51438567"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Roberto Flores.</span> Naci en Aplao - Castilla - Arequipa, 
+                 tengo dos hermanos y a los 17 años tuve que
+                 vinir a vivir a la ciudad de Arequipa por motivos de estudio. Una cosa 
+                 que descubri que me apasiona son los autos, las carreras de autos y 
+                 la programacion, tambien amo las mascotas en especial los perros y gatos,
+                  mis hobbies que tengo es escuchar musica, leer y aprender nuevas cosas.</p> 
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-04-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            993414663
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            roberto.flores@tecsup.edu.pe
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av Los Rosales, Jacono Hunter, Arequipa.
+                        </li>
+                        <li>
+                            <strong>Ocupacion</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>ANIMALES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lenguajes de Programacion -->
+    <section id="lenguajeprogra" class="lenguajeprogra">
+        <div class="contenido-seccion">
+            <h2>Lenguajes de Programacion</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>- Python</h3>
+                    <h3>- Java</h3>
+                    <h3>- JavaScript</h3>
+                    <h3>- C++</h3>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Formacion Profesional-->
+    <section id="formaprofe" class="formaprofe">
+        <div class="contenido-seccion">
+            <h2>Formacion Profesional</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>- Estudiante de Diseño y Desarrollo de Software</h3>
+                    <h3>- Certificacion en Lean Six Sigma White Belt</h3>
+                    </div>
+    </section>
+    <!-- Idiomas-->
+        <section id="idiomas" class="idiomas">
+            <div class="contenido-seccion">
+                <h2>Idiomas</h2>
+                <div class="fila">
+                 <div class="col">
+                    <h3>- Español</h3>
+                    <h3>- Ingles</h3>
+                </div>
+</section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
